@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>CodeWord</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/theme.css') }}">
+    {% block css %}{% endblock %}
+    <!-- JavaScript -->
+    <script type=test/jsx">
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+    {% block scripts %}{% endblock %}
+  </head>
+  <body>
+    <!-- Application header. -->
+    <header>
+      <div id="title">CodeWord</div>
+    </header>
+    <!-- Div for game. -->
+    <div id="game_board">
+      <!-- Div for rows of numbers. -->
+      <div id="number_grid">
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+      </div>
+      <!-- Div for answer row. -->
+      <div id="answer_grid">
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+      </div>
+    <!-- Div for keyboard. -->
+    </div>
+    <div id="keyboard">
+      <!-- TODO: keyboard -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+body {
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  background-color: Black;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 100px;
+  color: White;
+  padding: 0px 16px;
+  border-bottom: 1px solid White;
+}
+
+#title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+#game_board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid White;
+}
+
+#number_grid {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: Black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#answer_grid {
+  width: 300px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  background-color: Black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.element {
+  background-color: Black;
+  border: 1px solid White;
+  padding: 5px;
+}
