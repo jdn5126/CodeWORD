@@ -3,13 +3,9 @@
     <title>CodeWord</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/theme.css') }}">
-    {% block css %}{% endblock %}
     <!-- JavaScript -->
-    <script type=text/javascript">
-        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-    </script>
     <script type=text/javascript src="{{ url_for('static', filename='js/test.js') }}"></script>
-    {% block scripts %}{% endblock %}
+    <script defer src="{{ url_for('static', filename='dist/bundle.js') }}"></script></head>
   </head>
   <body>
     <!-- Application header. -->
@@ -106,5 +102,6 @@
         </div>
       </div>
     </div>
+    <div id="reactTest"></div>
   </body>
 </html>

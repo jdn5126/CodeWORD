@@ -101,3 +101,7 @@ header {
 .btn-group button:hover {
   background-color: DarkGray;
 }
+
+#reactTest {
+  color: White;
+}
