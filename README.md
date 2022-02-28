@@ -11,6 +11,7 @@ Code is free to use, but please provide proper credit.
 ### Prerequisites
 1. Python 2.7 or Python 3.5+
 2. virtualenv
+3. npm
 
 ### Quickstart
 1. Create a python virtual environment (I prefer `virtualenvwrapper`):
@@ -24,7 +25,12 @@ $ workon codeword
 $ pip install -r requirements.txt
 ```
 
-3. Run development server from project root:
+3. Install JavaScript modules
+```
+$ npm install
+```
+
+4. Run development server from project root:
 ```
 $ flask run
 ```
